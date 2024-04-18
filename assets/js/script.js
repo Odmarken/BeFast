@@ -51,3 +51,21 @@ function makeBox() {
     }, time); 
 
 }
+
+/*--- Reaction timer --- */
+document.getElementById("box").onclick=function() {
+
+    clickedTime=Date.now();
+    
+    reactionTime=(clickedTime-createdTime)/1000;
+    
+    document.getElementById("printReactionTime").innerHTML="You can do better!: " + reactionTime + "seconds";
+    
+    this.style.display="none";
+    
+    makeBox();
+    
+    
+}
+
+makeBox(); 
