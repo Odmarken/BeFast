@@ -12,17 +12,17 @@ function getRandomColor() {
 
 } 
 
-
 /*----- Reaction Timmer ---- */
 
 var clickedTime; var createdTime; var reactionTime; 
 
+
 /*--- Scaling for how fast the boxes should appear --- */
 
 function makeBox() {
-    var time=Math.random();
-    time=time*500;
-
+        var time=Math.random();
+        time=time*500;
+    
     setTimeout(function() {
     
         if (Math.random()>0.5) {
@@ -51,7 +51,6 @@ function makeBox() {
     }, time); 
 
 }
-
 /*--- Reaction timer --- */
 document.getElementById("box").onclick=function() {
 
