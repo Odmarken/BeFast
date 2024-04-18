@@ -39,3 +39,11 @@ body {
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5); 
 
 }
+
+#box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;   
+    display: none;            
+    position: relative;       
+}
