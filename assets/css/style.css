@@ -47,3 +47,14 @@ body {
     display: none;            
     position: relative;       
 }
+
+#Rules {
+    position: fixed;
+    bottom: 0;
+    left: 35%;                    
+    right: 35%;                   
+    width: auto;                  
+    text-align: center;
+    padding: 10px 0;
+
+}
