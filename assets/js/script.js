@@ -11,3 +11,8 @@ function getRandomColor() {
 
 
 } 
+
+
+/*----- Reaction Timmer ---- */
+
+var clickedTime; var createdTime; var reactionTime; 
