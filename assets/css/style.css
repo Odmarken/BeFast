@@ -3,9 +3,9 @@
 
 * {
     color: black;
-    
+
     text-shadow: 1px 1px 2px white;
-   
+
 }
 
 
@@ -67,34 +67,39 @@ body {
     position: absolute;
 }
 
+/*--- Rules section --- */
+
+#Rules {
+    background-color: red;
+    border-radius: 15px; 
+}
 
 
 
-
-@media only screen and (max-width: 900px) { 
+@media only screen and (max-width: 900px) {
     h1 {
-        font-size: 2rem; 
-        padding: 8px 0; 
+        font-size: 2rem;
+        padding: 8px 0;
     }
 
     #centerBox {
-        width: 100%; 
-        height: 80%; 
+        width: 100%;
+        height: 80%;
         padding-top: 10vh;
-        
+
     }
 
     #box {
-        width: 35px; 
-        height: 35px; 
+        width: 35px;
+        height: 35px;
     }
 
     #Rules {
-        width: 40%; 
-        height: 40%; 
+        width: 40%;
+        height: 40%;
     }
 
     #printReactionTime {
-        font-size: 1rem; 
+        font-size: 1rem;
     }
 }
