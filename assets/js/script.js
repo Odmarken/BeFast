@@ -71,9 +71,9 @@ makeBox(); // Initialize the box on page load
 
 document.addEventListener('DOMContentLoaded', function() {
     var rules = document.getElementById('Rules');
-    rules.style.display = 'block'; // Show the rules
+    rules.style.display = 'block'; 
 
-    setTimeout(function() {
+    rules.addEventListener('click', function() {
         rules.style.display = 'none'; 
-    }, 10000); 
+    });
 });
