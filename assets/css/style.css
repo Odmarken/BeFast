@@ -64,46 +64,39 @@ body {
     height: 60px;
     background-color: blue;
     display: none;
-    position: relative;
+    position: absolute;
 }
 
 #Rules {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); 
     width: 30%;
     height: 50px;
     padding: 10px 0;
-    background-color: #000000;
-    color: white;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-    display: none; 
+     text-align: center;
+   display: none; 
     font-family: 'Pridi', serif;
 }
 
 
-#Rules:hover {
-    transform: scale(1.1);
-}
 
 
-@media only screen and (max-width: 390px) { 
+@media only screen and (max-width: 1200px) { 
     h1 {
         font-size: 2rem; 
         padding: 8px 0; 
     }
 
     #centerBox, #Rules {
-        width: 90%; 
+        width: 100%; 
         height: auto; 
         padding: 20px; 
     }
 
     #box {
-        width: 50px; 
-        height: 50px; 
+        width: 35px; 
+        height: 35px; 
     }
 
     #printReactionTime {
