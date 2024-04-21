@@ -14,7 +14,9 @@ Welcome to Be Fast! This engaging and fast-paced game is meticulously designed t
 1. **Start the Game:** The game start automatically.
 2. **Click the Boxes:** Boxes will appear at random positions on the screen. Click them as quickly as you can.
 3. **Keep an Eye on the Timer:** The game records your reaction time for each box.
-4. 
+
+![Box](./assets/images/Object.png)
+
 
 ## User Experience (UX) 
 
@@ -36,19 +38,20 @@ Welcome to Be Fast! This engaging and fast-paced game is meticulously designed t
     
     The title stays clean and understandable so the user can instantly see what it means and recognize it.
 
-    ![Title](./)
+    ![Title](./assets/images/titleimage.png)
 
 2.	**Heading/Rules**  
 
      The heading provides a simple statement and shows you how to react, while the Rules section offers a straightforward rule to follow and explains how to play the game.
    
-    ![Heading](./)
+    ![Heading](./assets/images/headingimage.png)
+    ![Rules](./assets/images/rulesimage.png)
 
 3.	**Game**  
     
     The game is a reaction-type game that will challenge you to the edges, perfect for reflex practice or for gamers who want to improve their aim in FPS shooting games.
 
-    ![Navigation](./)
+    ![Game](./assets/images/gameimage.png)
 
 ## Design
 
@@ -56,3 +59,21 @@ Welcome to Be Fast! This engaging and fast-paced game is meticulously designed t
 ### Colours
 
 The color design I have been using is black, white, and red, with a graphic background to make it more 'game-like'. I have added a shadow to the playground to sometimes make the game boxes hard to see, increasing the challenge.
+
+![Design](./assets/images/design.png)
+
+### Typography
+
+In this project Ive used ('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap') 
+from google font [View deployed site here](https://fonts.google.com/)
+
+## Technologies and tools used
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
+- [JavaScript](https://it.wikipedia.org/wiki/JavaScript)
+- Version control: [Git](https://git-scm.com/)
+- Public repository: [GitHub](https://github.com/)
+- Google Font: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Lighthouse: [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
+- Free Images: [Pexels](https://www.pexels.com/search/website%20background/)
