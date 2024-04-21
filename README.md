@@ -74,6 +74,54 @@ from google font [View deployed site here](https://fonts.google.com/)
 - [JavaScript](https://it.wikipedia.org/wiki/JavaScript)
 - Version control: [Git](https://git-scm.com/)
 - Public repository: [GitHub](https://github.com/)
-- Google Font: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- [Google Fonts:](https://fonts.google.com/) font used is "Pridi".
+- [Font Awesome:](https://fontawesome.com/) is used on header and form sign up and also footer.
 - Lighthouse: [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
 - Free Images: [Pexels](https://www.pexels.com/search/website%20background/)
+
+### HTML validation
+
+![HTML](./assets/images/htmlvali.png)
+
+### CSS validation
+
+![CSS](./assets/images/cssvali.png)
+
+### JS validation 
+
+![Javascript](./assets/images/jsvali.png)
+
+### Lighthouse testing
+
+![Lighthouse](./assets/images/SEO.png)
+
+
+### Browser compatibility
+
+- Google Chrome
+- Safari
+- Firefox
+- Microsoft Edge
+
+
+## Testing
+
+
+1. [HTML validation](#html-validation)
+2. [CSS validation](#css-validation)
+3. [JavaScript validation](#js-validation)
+4. [Lighthouse testing](#lighthouse-testing)
+5. [Browsers compatibility](#browser-compatibility)
+
+## Deployment
+
+I've deployed the website on GitHub Pages.
+
+To deploy the website:
+
+1. from the GitHub repository, click on 'settings'
+2. find and click on 'pages' on the setting sidebar menu
+3. select the branch to be used. In this case 'main'
+4. Refresh the page and in a few minutes, the following message will appear if the website was deployed correctly
+
+
