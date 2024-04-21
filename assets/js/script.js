@@ -13,7 +13,7 @@ let clickedTime;
 let createdTime;
 let reactionTime;
 
-
+/*--- Function to create and position the box within the centerBox --- */
 function makeBox() {
     let time = Math.random() * 2000;  
 
@@ -25,18 +25,18 @@ function makeBox() {
         const maxTop = centerBox.clientHeight - box.clientHeight;
         const maxLeft = centerBox.clientWidth - box.clientWidth;
 
-        
-        if (Math.random() > 0.5) {
-            box.style.borderRadius = "100px";  
-        } else {
-            box.style.borderRadius = "0";  
-        }
-
-        
+     
         box.style.top = Math.random() * maxTop + "px";
         box.style.left = Math.random() * maxLeft + "px";
         box.style.backgroundColor = getRandomColor();  
         box.style.display = "block";  
+
+        
+        if (Math.random() > 0.5) {
+            box.style.borderRadius = "100px";  
+        } else {
+            box.style.borderRadius = "0"; 
+        }
 
         createdTime = Date.now();
     }, time);
@@ -51,7 +51,7 @@ document.getElementById("box").onclick = function () {
     makeBox();  
 }
 
-makeBox();  /
+makeBox();  
 
 /*---- Rules display and hide mechanics -----*/
 document.addEventListener('DOMContentLoaded', function() {
