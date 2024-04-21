@@ -59,11 +59,3 @@ makeBox();
 
 /*---- Rules hidden timer -----*/
 
-document.addEventListener('DOMContentLoaded', function() {
-    var rules = document.getElementById('Rules');
-    rules.style.display = 'block'; 
-
-    rules.addEventListener('click', function() {
-        rules.style.display = 'none'; 
-    });
-});
