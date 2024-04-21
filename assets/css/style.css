@@ -13,6 +13,7 @@
 h1 {
     position: fixed;
     background-color: rgba(255, 255, 255, 0.73) top: 0;
+    top: 0;
     left: 0;
     width: 100%;
     text-align: center;
@@ -70,15 +71,18 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%); 
     width: 30%;
     height: 50px;
     padding: 10px 0;
     background-color: #000000;
     color: white;
-    text-align: center;/ box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-    display: none;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    display: none; 
     font-family: 'Pridi', serif;
 }
+
 
 #Rules:hover {
     transform: scale(1.1);
