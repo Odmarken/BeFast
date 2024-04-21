@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap');
 
+
+* {
+    color: black;
+    
+    text-shadow: 1px 1px 2px white;
+   
+}
+
+
 /*--- Header --- */
 h1 {
     position: fixed;
-    background-color: black;
-    top: 0;
+    background-color: rgba(255, 255, 255, 0.73) top: 0;
     left: 0;
     width: 100%;
     text-align: center;
@@ -13,7 +21,7 @@ h1 {
     z-index: 1000;
     margin: 0;
     font-size: 3rem;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     font-family: 'Pridi', serif;
 }
 
@@ -45,8 +53,9 @@ body {
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
     overflow: hidden;
     position: relative;
-    font-family: 'Pridi', serif; 
+    font-family: 'Pridi', serif;
 }
+
 /*--- Game ----*/
 
 #box {
@@ -59,17 +68,16 @@ body {
 
 #Rules {
     position: fixed;
-    top: 50%; 
-    left: 50%; 
-    width: 30%; 
-    height: 50px; 
-    padding: 10px 0; 
-    background-color: #000000; 
-    color: white; 
-    text-align: center; /
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
-    display: none; 
-    font-family: 'Pridi', serif; 
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    height: 50px;
+    padding: 10px 0;
+    background-color: #000000;
+    color: white;
+    text-align: center;/ box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    display: none;
+    font-family: 'Pridi', serif;
 }
 
 #Rules:hover {
