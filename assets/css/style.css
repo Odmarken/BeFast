@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap');
+
 /*--- Header --- */
 h1 {
     position: fixed;
@@ -10,16 +12,16 @@ h1 {
     z-index: 1000;
     margin: 0;
     font-size: 3rem;
+    font-family: 'Pridi', serif;
 }
 
 body {
-    
     background-image: url("../images/Backgroundsky.jpg");
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     background-repeat: no-repeat;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Pridi', serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,21 +30,22 @@ body {
     margin: 0;
 }
 
+/*-- Centerbox middle of screen -- */
+
 #centerBox {
     width: 75%;
     height: 75%;
-    background-color: rgba(0, 0, 0, 0); 
+    background-color: rgba(0, 0, 0, 0);
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
     overflow: hidden;
     position: relative;
+    font-family: 'Pridi', serif; 
 }
-
-
-
+/*--- Game ----*/
 
 #box {
     width: 40px;
@@ -50,9 +53,7 @@ body {
     background-color: blue;
     display: none;
     position: relative;
-    
 }
-
 
 #Rules {
     position: fixed;
@@ -60,18 +61,18 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    width: 30%; 
-    height: auto; 
-    margin: auto; 
+    width: 30%;
+    height: auto;
+    margin: auto;
     padding: 10px 0;
     background-color: #000000;
     color: white;
     text-align: center;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    display: none; 
+    display: none;
     transition: transform 0.3s ease;
+    font-family: 'Pridi', serif;
 }
-
 
 #Rules:hover {
     transform: scale(1.1);
