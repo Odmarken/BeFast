@@ -19,7 +19,7 @@ let reactionTime;
 
 function makeBox() {
     let time = Math.random();
-    time = time * 2000;
+    time = time * 6000;
 
     setTimeout(function () {
         if (Math.random() > 0.5) {
