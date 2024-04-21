@@ -66,9 +66,8 @@ body {
     background-color: #000000; 
     color: white; 
     text-align: center; /
-    box-shadow: 0 0 10px rgba(255, 255, 255, 1.0); 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
     display: none; 
-    transition: transform 0.3s ease; 
     font-family: 'Pridi', serif; 
 }
 
