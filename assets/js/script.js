@@ -1,4 +1,5 @@
-/*--- Colour Function ---- */
+/*--- colour Function ---- */
+
 function getRandomColor() {
     let letters = "0123456789ABCDEF".split('');
     let color = "#";
@@ -8,57 +9,61 @@ function getRandomColor() {
     return color;
 }
 
-/*--- Global variables for reaction timer ---- */
+/*----- Reaction Timer ---- */
+
 let clickedTime;
 let createdTime;
 let reactionTime;
 
-/*--- Function to create and position the box within the centerBox --- */
+/*--- Scaling for how fast the boxes should appear --- */
+
 function makeBox() {
-    let time = Math.random() * 2000;  
+    let time = Math.random();
+    time = time * 2000;
 
     setTimeout(function () {
-        const box = document.getElementById("box");
-        const centerBox = document.getElementById("centerBox");
-
-        
-        const maxTop = centerBox.clientHeight - box.clientHeight;
-        const maxLeft = centerBox.clientWidth - box.clientWidth;
-
-     
-        box.style.top = Math.random() * maxTop + "px";
-        box.style.left = Math.random() * maxLeft + "px";
-        box.style.backgroundColor = getRandomColor();  
-        box.style.display = "block";  
-
-        
         if (Math.random() > 0.5) {
-            box.style.borderRadius = "100px";  
+            document.getElementById("box").style.borderRadius = "100px";
         } else {
-            box.style.borderRadius = "0"; 
+            document.getElementById("box").style.borderRadius = "0";
         }
+
+        let top = Math.random();
+        top = top * 300;
+        let left = Math.random();
+        left = left * 500;
+
+        document.getElementById("box").style.top = top + "px";
+        document.getElementById("box").style.left = left + "px";
+        document.getElementById("box").style.backgroundColor = getRandomColor();
+        document.getElementById("box").style.display = "block";
 
         createdTime = Date.now();
     }, time);
 }
 
-/*--- Reaction timer setup --- */
+/*--- Reaction timer --- */
 document.getElementById("box").onclick = function () {
     clickedTime = Date.now();
-    reactionTime = (clickedTime - createdTime) / 1000;  
+
+    reactionTime = (clickedTime - createdTime) / 1000;
+
     document.getElementById("printReactionTime").innerHTML = "You can do better!: " + reactionTime + " seconds";
-    this.style.display = "none";  
-    makeBox();  
+
+    this.style.display = "none";
+
+    makeBox();
 }
 
-makeBox();  
+makeBox();
 
-/*---- Rules display and hide mechanics -----*/
+/*---- Rules hidden timer -----*/
+
 document.addEventListener('DOMContentLoaded', function() {
     var rules = document.getElementById('Rules');
     rules.style.display = 'block'; 
 
     rules.addEventListener('click', function() {
-        rules.style.display = 'none';  
+        rules.style.display = 'none'; 
     });
 });
