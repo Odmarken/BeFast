@@ -57,21 +57,19 @@ body {
 
 #Rules {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 30%;
-    height: auto;
-    margin: auto;
-    padding: 10px 0;
-    background-color: #000000;
-    color: white;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    display: none;
-    transition: transform 0.3s ease;
-    font-family: 'Pridi', serif;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 30%; 
+    height: 50px; 
+    padding: 10px 0; 
+    background-color: #000000; 
+    color: white; 
+    text-align: center; /
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1.0); 
+    display: none; 
+    transition: transform 0.3s ease; 
+    font-family: 'Pridi', serif; 
 }
 
 #Rules:hover {
