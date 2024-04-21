@@ -1,4 +1,4 @@
-/*--- Colour Function ---- */
+/*--- colour Function ---- */
 
 function getRandomColor() {
     let letters = "0123456789ABCDEF".split('');
@@ -15,37 +15,28 @@ let clickedTime;
 let createdTime;
 let reactionTime;
 
-/*--- Scaling for how fast the boxes should appear and fitting them inside the centerBox --- */
+/*--- Scaling for how fast the boxes should appear --- */
 
 function makeBox() {
     let time = Math.random();
     time = time * 2000;
 
     setTimeout(function () {
-        let box = document.getElementById("box");
-        let container = document.getElementById("centerBox"); // Ensure this element exists in your HTML
-
-        // Update to the smaller size of the box
-        box.style.width = "50px";
-        box.style.height = "50px";
-
         if (Math.random() > 0.5) {
-            box.style.borderRadius = "100px";
+            document.getElementById("box").style.borderRadius = "100px";
         } else {
-            box.style.borderRadius = "0";
+            document.getElementById("box").style.borderRadius = "0";
         }
 
-        // Calculate position within the container bounds
-        let maxWidth = container.clientWidth - box.clientWidth; // Use the actual width of the box
-        let maxHeight = container.clientHeight - box.clientHeight; // Use the actual height of the box
+        let top = Math.random();
+        top = top * 300;
+        let left = Math.random();
+        left = left * 500;
 
-        let top = Math.random() * maxHeight;
-        let left = Math.random() * maxWidth;
-
-        box.style.top = top + "px";
-        box.style.left = left + "px";
-        box.style.backgroundColor = getRandomColor();
-        box.style.display = "block";
+        document.getElementById("box").style.top = top + "px";
+        document.getElementById("box").style.left = left + "px";
+        document.getElementById("box").style.backgroundColor = getRandomColor();
+        document.getElementById("box").style.display = "block";
 
         createdTime = Date.now();
     }, time);
@@ -64,8 +55,7 @@ document.getElementById("box").onclick = function () {
     makeBox();
 }
 
-makeBox(); // Initialize the box on page load
-
+makeBox();
 
 /*---- Rules hidden timer -----*/
 
