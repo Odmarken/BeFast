@@ -38,20 +38,20 @@ Welcome to Be Fast! This engaging and fast-paced game is meticulously designed t
     
     The title stays clean and understandable so the user can instantly see what it means and recognize it.
 
-    ![Title](./assets/images/titleimage.png)
+    ![Title](./assets/images/heading.png)
 
 2.	**Notes/Rules**  
 
      The Notes section offers a straightforward rule to follow and explains how to play the game.
    
     
-    ![Notes](./assets/images/rulesimage.png)
+    ![Notes](./assets/images/notes.png)
 
 3.	**Game**  
     
     The game is a reaction-type game that will challenge you to the edges, perfect for reflex practice or for gamers who want to improve their aim in FPS shooting games.
 
-    ![Game](./assets/images/gameimage.png)
+    ![Game](./assets/images/game.png)
 
 ## Design
 
@@ -61,11 +61,12 @@ Welcome to Be Fast! This engaging and fast-paced game is meticulously designed t
 The color design I have been using is black, white, and red, with a graphic background to make it more 'game-like'. I have added a shadow to the playground to sometimes make the game boxes hard to see, increasing the challenge.
 
 ![Design](./assets/images/design.png)
+![Design](./assets/images/design2.png)
 
 ### Typography
 
-In this project Ive used ('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap') 
-from google font [View deployed site here](https://fonts.google.com/)
+In this project Ive used [Pridi](https://fonts.google.com/specimen/Pridi)
+from google font [Google fonts](https://fonts.google.com/)
 
 ## Technologies and tools used
 
@@ -133,7 +134,7 @@ I've deployed the website on GitHub Pages.
 
 ## Bugs and known issues
 
-- 
+- The scaling for the game boxes sometimes bugs out when reduced to under 368 pixels.
 
 ## Coding help
 

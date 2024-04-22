@@ -55,8 +55,7 @@ body {
     height: 60px;
     background-color: blue;
     display: none;
-    position: relative;
-    justify-content: center;
+    position: absolute;
 }
 
 /*--- Rules section --- */
