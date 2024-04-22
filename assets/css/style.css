@@ -68,7 +68,7 @@ body {
 @media only screen and (max-width: 900px) {
     h1 {
         font-size: 2rem;
-        padding: 8px 0;
+        padding-top: 80px;
     }
 
     #centerBox {
