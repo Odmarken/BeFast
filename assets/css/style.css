@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap');
 
-    {
+/*----Universal text styling -----*/
+* {
     color: black;
     text-shadow: 1px 1px 2px white;
-
+    font-family: 'Pridi', serif;
 }
 
 /*--- Header --- */
@@ -19,8 +20,6 @@ h1 {
     z-index: 1000;
     margin: 0;
     font-size: 3rem;
-    font-family: 'Pridi', serif;
-    padding-bottom: 200px;
 }
 
 body {
@@ -28,8 +27,6 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: white;
-    font-family: 'Pridi', serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,25 +36,20 @@ body {
 }
 
 /*-- Centerbox middle of screen -- */
-
-
 #centerBox {
     width: 60%;
     height: 60%;
     background-color: rgba(255, 255, 255, 0.73);
-    color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
     overflow: hidden;
     position: relative;
-    font-family: 'Pridi', serif;
     padding-top: 60px;
 }
 
 /*--- Game ----*/
-
 #box {
     width: 60px;
     height: 60px;
@@ -67,15 +59,12 @@ body {
 }
 
 /*--- Rules section --- */
-
 #rules {
-
     background-color: white;
     border-radius: 25px;
 }
 
 /*---- Media Screens ---- */
-
 @media only screen and (max-width: 900px) {
     h1 {
         font-size: 2rem;
