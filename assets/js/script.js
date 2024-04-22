@@ -29,10 +29,10 @@ function makeBox() {
         }
 
         let top = Math.random();
-        top = top * window.innerHeight;
-        let left = Math.random();
-        left = left * window.innerWidth;
+        top = top * element.clientHeight;
 
+        let left = Math.random();
+        left = left * element.clientWidth;
 
         document.getElementById("box").style.top = top + "px";
         document.getElementById("box").style.left = left + "px";

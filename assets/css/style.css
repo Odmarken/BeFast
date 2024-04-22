@@ -12,7 +12,7 @@
 /*--- Header --- */
 h1 {
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.73);
+    background-color: white;
     top: 0;
     left: 0;
     width: 100%;
@@ -22,7 +22,6 @@ h1 {
     z-index: 1000;
     margin: 0;
     font-size: 3rem;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     font-family: 'Pridi', serif;
 }
 
@@ -56,6 +55,7 @@ body {
     overflow: hidden;
     position: relative;
     font-family: 'Pridi', serif;
+    padding-top: 60px;
 }
 
 /*--- Game ----*/
@@ -71,7 +71,7 @@ body {
 /*--- Rules section --- */
 
 #Rules {
-    background-color: red;
+    background-color: rgb(255, 255, 255);
     border-radius: 25px;
 }
 
@@ -84,7 +84,7 @@ body {
     }
 
     #centerBox {
-        width: 100%;
+        width: 90%;
         height: 80%;
         display: flex;
         align-items: center;
