@@ -19,7 +19,7 @@ let reactionTime;
 
 function makeBox() {
     let time = Math.random();
-    time = time * 6000;
+    time = time * 1000;
 
     setTimeout(function () {
         if (Math.random() > 0.5) {
@@ -29,9 +29,10 @@ function makeBox() {
         }
 
         let top = Math.random();
-        top = top * 300;
+        top = top * window.innerHeight;
         let left = Math.random();
-        left = left * 500;
+        left = left * window.innerWidth;
+
 
         document.getElementById("box").style.top = top + "px";
         document.getElementById("box").style.left = left + "px";
@@ -58,4 +59,3 @@ document.getElementById("box").onclick = function () {
 makeBox();
 
 /*---- Rules hidden timer -----*/
-
