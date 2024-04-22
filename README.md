@@ -101,6 +101,7 @@ from google font [View deployed site here](https://fonts.google.com/)
 - Google Chrome
 - Safari
 - Firefox
+- Opera GX
 - Microsoft Edge
 
 
