@@ -98,15 +98,21 @@ from google font [View deployed site here](https://fonts.google.com/)
 
 ### Browser compatibility
 
-- Google Chrome
+- I have rigorously tested the website on various browsers, including Firefox, Safari, Chrome, and Opera GX, and they all work flawlessly.
+- I've tested it on different devices such as phones, tablets, a MacBook Pro, Windows 11, and also an iMac.
+- Additionally, I have tested the website using Chrome's developer tools to ensure it functions correctly across all resolutions, including the iMac Pro's 5120 x 2880 resolution.
+- Navigation elements are placed in their appropriate locations throughout the website.
+- Footer navigation elements are correctly positioned where they belong, and they open in a new browser tab.
+- The form accurately validates fields that are marked as required, ensuring no essential information is omitted.
+- The form also checks the format of email addresses, confirming they adhere to the standard email structure.
+- All data entered into the form is successfully transmitted to the designated formdump for processing and storage.
+
+- Chrome
 - Safari
 - Firefox
 - Opera GX
-- Microsoft Edge
-
 
 ## Testing
-
 
 1. [HTML validation](#html-validation)
 2. [CSS validation](#css-validation)
@@ -118,11 +124,31 @@ from google font [View deployed site here](https://fonts.google.com/)
 
 I've deployed the website on GitHub Pages.
 
-To deploy the website:
+- In the GitHub repository, navigate to the Settings tab, choose Pages from the left hand menu 
+- From the source section drop-down menu, select the Master Branch once the master branch has been selected, the page will be automatically refreshed with a detailed display to indicate the successful deployment
+- Changes pushed to the master branch will take effect on the live project
 
-1. from the GitHub repository, click on 'settings'
-2. find and click on 'pages' on the setting sidebar menu
-3. select the branch to be used. In this case 'main'
-4. Refresh the page and in a few minutes, the following message will appear if the website was deployed correctly
+
+[Be Fast](https://odmarken.github.io/BeFast/) 
+
+## Bugs and known issues
+
+- 
+
+## Coding help
+
+- I received a lot of help from the lovely community at CI Community-Sweden. The Slack group has been amazing when it comes to assistance. Every time I have been stuck, they have responded within minutes. We also have multiple huddles that helps a lot from experienced coders.
+
+- Youtube.
+- Google
+- Close friends
+
+## Credits
+
+- Slack group community-sweden in CI slack group.
+- Brian my mentor.
+- Jonahatan in community-sweden ex CI student.
+- Insperation https://www.youtube.com/watch?v=tTO1GyOjaI0&t=1099s 
+- coding help https://www.youtube.com/@webbskolan in swedish
 
 
