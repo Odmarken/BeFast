@@ -1,4 +1,5 @@
-/*--- Colour Function ---- */
+/*--- colour Function ---- */
+
 function getRandomColor() {
     let letters = "0123456789ABCDEF".split('');
     let color = "#";
@@ -8,52 +9,56 @@ function getRandomColor() {
     return color;
 }
 
-/*----- Reaction Timer Variables ---- */
+/*----- Reaction Timer ---- */
+
 let clickedTime;
 let createdTime;
 let reactionTime;
-let scores = []; 
 
 /*--- Scaling for how fast the boxes should appear --- */
+
 function makeBox() {
-    let time = Math.random() * 1000; 
+    let time = Math.random();
+    time = time * 1000;
 
     setTimeout(function () {
-        let box = document.getElementById("box");
         if (Math.random() > 0.5) {
-            box.style.borderRadius = "100px"; 
+            document.getElementById("box").style.borderRadius = "100px";
         } else {
-            box.style.borderRadius = "0"; 
+            document.getElementById("box").style.borderRadius = "0";
         }
 
-        let top = Math.random() * 250;
-        let left = Math.random() * 300;
+        let top = Math.random();
+        top = top * 250;
+        let left = Math.random();
+        left = left * 300;
+        let right = Math.random();
+        right = right * 300;
 
-        box.style.top = top + "px";
-        box.style.left = left + "px";
-        box.style.backgroundColor = getRandomColor();
-        box.style.display = "block";
+
+
+        document.getElementById("box").style.top = top + "px";
+        document.getElementById("box").style.left = left + "px";
+        document.getElementById("box").style.backgroundColor = getRandomColor();
+        document.getElementById("box").style.display = "block";
 
         createdTime = Date.now();
     }, time);
 }
 
-/*--- Reaction timer and score display --- */
+/*--- Reaction timer --- */
 document.getElementById("box").onclick = function () {
     clickedTime = Date.now();
+
     reactionTime = (clickedTime - createdTime) / 1000;
 
-    scores.push(reactionTime); 
-    if (scores.length > 2) {
-        scores.shift(); 
-    }
-
-
-    document.getElementById("printReactionTime").innerHTML = "Reaction Time: " + reactionTime + " seconds.";
-    document.getElementById("scoreBoard").innerHTML = "Last two scores: " + scores.join(", ");
+    document.getElementById("printReactionTime").innerHTML = "You can do better!: " + reactionTime + " seconds";
 
     this.style.display = "none";
+
     makeBox();
 }
 
-makeBox(); 
+makeBox();
+
+/*---- Rules hidden timer -----*/
