@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap');
 
 
-* {
-    color: black;
-
-    text-shadow: 1px 1px 2px white;
-
-}
-
-
 /*--- Header --- */
 h1 {
     position: fixed;
@@ -23,6 +15,7 @@ h1 {
     margin: 0;
     font-size: 3rem;
     font-family: 'Pridi', serif;
+    padd
 }
 
 body {
@@ -71,7 +64,8 @@ body {
 /*--- Rules section --- */
 
 #Rules {
-    background-color: rgb(255, 255, 255);
+
+    background-color: white;
     border-radius: 25px;
 }
 

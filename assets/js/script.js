@@ -29,11 +29,11 @@ function makeBox() {
         }
 
         let top = Math.random();
-        top = top * 400;
+        top = top * 250;
         let left = Math.random();
-        left = left * 400;
+        left = left * 300;
         let right = Math.random();
-        right = right * 400;
+        right = right * 300;
 
 
 
