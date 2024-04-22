@@ -76,7 +76,7 @@ body {
 
 /*---- Media Screens ---- */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
     h1 {
         font-size: 2rem;
         padding: 8px 0;
