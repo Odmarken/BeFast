@@ -40,21 +40,6 @@ body {
     margin: 0;
 }
 
-/*-- Centerbox styling for middle of screen -- */
-/* Style the center box element */
-#centerBox {
-    width: 60%;
-    height: 60%;
-    background-color: rgba(255, 255, 255, 0.73);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
-    overflow: hidden;
-    position: relative;
-    padding-top: 60px;
-}
-
 /*--- Game box styling --- */
 /* Style the game box element */
 #box {
