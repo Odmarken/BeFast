@@ -35,7 +35,19 @@ body {
     margin: 0;
 }
 
-
+/*-- Centerbox middle of screen -- */
+#centerBox {
+    width: 60%;
+    height: 60%;
+    background-color: rgba(255, 255, 255, 0.73);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+    position: relative;
+    padding-top: 60px;
+}
 
 /*--- Game ----*/
 #box {
@@ -44,19 +56,10 @@ body {
     background-color: blue;
     display: none;
     position: absolute;
-    justify-content: center;
-    align-items: center;
-    display: flex;
 }
 
 /*--- Rules section --- */
 #rules {
     background-color: white;
     border-radius: 25px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
 }
-
