@@ -1,14 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap');
 
-/*----Universal text styling -----*/
+/*---- Universal text styling ---- */
+/* Apply text styling to all elements */
 * {
     color: black;
     text-shadow: 1px 1px 2px white;
     font-family: 'Pridi', serif;
 }
 
-/*--- Header --- */
+/*--- Header styling --- */
+/* Style the header element */
 h1 {
     position: fixed;
     background-color: white;
@@ -23,6 +25,8 @@ h1 {
     font-size: 3rem;
 }
 
+/*--- Body styling --- */
+/* Style the body element */
 body {
     background-image: url("../images/blackdesign.jpg");
     background-size: cover;
@@ -36,7 +40,8 @@ body {
     margin: 0;
 }
 
-/*-- Centerbox middle of screen -- */
+/*-- Centerbox styling for middle of screen -- */
+/* Style the center box element */
 #centerBox {
     width: 60%;
     height: 60%;
@@ -50,7 +55,8 @@ body {
     padding-top: 60px;
 }
 
-/*--- Game ----*/
+/*--- Game box styling --- */
+/* Style the game box element */
 #box {
     width: 60px;
     height: 60px;
@@ -60,7 +66,8 @@ body {
     justify-content: center;
 }
 
-/*--- Rules section --- */
+/*--- Rules section styling --- */
+/* Style the rules section element */
 #rules {
     background-color: white;
     border-radius: 25px;
