@@ -44,6 +44,9 @@ body {
     background-color: blue;
     display: none;
     position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 /*--- Rules section --- */
@@ -52,20 +55,6 @@ body {
     border-radius: 25px;
     position: fixed;
     bottom: 0;
-}
-
-{
-height: 100%;
-margin: 0;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-#gameContainer {
-position: relative;
-width: 800px;
-height: 800px;
 }
 
 
