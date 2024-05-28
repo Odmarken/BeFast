@@ -17,15 +17,13 @@ function makeBox() {
 
     setTimeout(function () {
         if (Math.random() > 0.5) {
-            document.getElementById("box").style.borderRadius = "100px";
+            document.getElementById("box").style.borderRadius = "30px"; // Adjusted for smaller box
         } else {
             document.getElementById("box").style.borderRadius = "0";
         }
 
-        let top = Math.random();
-        top = top * 700;
-        let left = Math.random();
-        left = left * 700; /
+        let top = Math.random() * (800 - 60); // Adjusted for box size
+        let left = Math.random() * (800 - 60); // Adjusted for box size
 
         document.getElementById("box").style.top = top + "px";
         document.getElementById("box").style.left = left + "px";
