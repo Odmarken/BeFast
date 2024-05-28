@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap');
 
 /*----Universal text styling -----*/
@@ -35,23 +36,32 @@ body {
     margin: 0;
 }
 
+/*-- Centerbox middle of screen -- */
+#centerBox {
+    width: 60%;
+    height: 60%;
+    background-color: rgba(255, 255, 255, 0.73);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+    position: relative;
+    padding-top: 60px;
+}
+
 /*--- Game ----*/
 #box {
     width: 60px;
     height: 60px;
     background-color: blue;
     display: none;
-    position: absolute;
+    position: relative;
+    justify-content: center;
 }
 
 /*--- Rules section --- */
 #rules {
     background-color: white;
     border-radius: 25px;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    position: fixed; 
-    bottom: 0; 
-    left: 0; 
 }
