@@ -43,7 +43,7 @@ body {
     height: 60px;
     background-color: blue;
     display: none;
-    position: absolute;
+    position: fixed;
 }
 
 /*--- Rules section --- */
