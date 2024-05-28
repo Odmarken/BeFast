@@ -43,7 +43,7 @@ body {
     height: 60px;
     background-color: blue;
     display: none;
-    position: fixed;
+    position: absolute;
 }
 
 /*--- Rules section --- */
@@ -53,3 +53,20 @@ body {
     position: fixed;
     bottom: 0;
 }
+
+{
+height: 100%;
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#gameContainer {
+position: relative;
+width: 800px;
+height: 800px;
+}
+
+
+

@@ -1,5 +1,3 @@
-/*--- colour Function ---- */
-
 function getRandomColor() {
     let letters = "0123456789ABCDEF".split('');
     let color = "#";
@@ -9,13 +7,9 @@ function getRandomColor() {
     return color;
 }
 
-/*----- Reaction Timer ---- */
-
 let clickedTime;
 let createdTime;
 let reactionTime;
-
-/*--- Scaling for how fast the boxes should appear --- */
 
 function makeBox() {
     let time = Math.random();
@@ -29,13 +23,9 @@ function makeBox() {
         }
 
         let top = Math.random();
-        top = top * 250;
+        top = top * 700;
         let left = Math.random();
-        left = left * 300;
-        let right = Math.random();
-        right = right * 300;
-
-
+        left = left * 700; /
 
         document.getElementById("box").style.top = top + "px";
         document.getElementById("box").style.left = left + "px";
@@ -46,7 +36,6 @@ function makeBox() {
     }, time);
 }
 
-/*--- Reaction timer --- */
 document.getElementById("box").onclick = function () {
     clickedTime = Date.now();
 
@@ -60,5 +49,3 @@ document.getElementById("box").onclick = function () {
 }
 
 makeBox();
-
-/*---- Rules hidden timer -----*/
