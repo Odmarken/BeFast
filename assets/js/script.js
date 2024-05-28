@@ -36,8 +36,8 @@ function createRandomBox() {
         document.getElementById("box").style.borderRadius = Math.random() > 0.5 ? "100px" : "0";
 
         // Set random positions for the box
-        const topPosition = Math.random() * 250;
-        const leftPosition = Math.random() * 300;
+        const topPosition = Math.random() * 125;
+        const leftPosition = Math.random() * 125;
 
         // Apply the position and random color to the box
         document.getElementById("box").style.top = topPosition + "px";
