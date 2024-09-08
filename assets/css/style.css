@@ -1,51 +1,34 @@
-
+/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap');
 
-/*---- Universal text styling ---- */
-/* Apply text styling to all elements */
-* {
-    color: black;
-    text-shadow: 1px 1px 2px white;
-    font-family: 'Pridi', serif;
-}
-
-/*--- Header styling --- */
-/* Style the header element */
-h1 {
-    position: fixed;
-    background-color: white;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-    border-bottom: 2px solid white;
-    z-index: 1000;
+/* Global styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    font-size: 3rem;
+    font-family: 'Pridi', sans-serif; /* Use the imported Google font */
 }
 
-display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        #startButton, #dot {
-            display: none;
-            position: absolute;
-        }
-        #startButton {
-            padding: 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        #dot {
-            width: 30px;
-            height: 30px;
-            background-color: red;
-            border-radius: 50%;
-        }
+/* Button and Dot styles */
+#startButton, #dot {
+    display: none;
+    position: absolute;
+}
+
+#startButton {
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Optional, to improve the appearance */
+}
+
+#dot {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+}

@@ -1,79 +1,46 @@
-/*--- Function to Generate a Random Color ---- */
+const startButton = document.getElementById('startButton');
+const dot = document.getElementById('dot');
 
-/**
- * Creates a random hex color code.
- * @returns {string} A hex color in the format "#RRGGBB".
- */
-function generateRandomColor() {
-    const hexChars = "0123456789ABCDEF".split('');
-    let colorCode = "#";
-    for (let i = 0; i < 6; i++) {
-        colorCode += hexChars[Math.floor(Math.random() * 16)];
-    }
-    return colorCode;
-}
+let timer;
 
-/*----- Variables for Reaction Timer ---- */
+window.onload = function () {
+    startButton.style.display = 'block'; 
+};
 
-// Time when the user clicks the box
-let clickTimestamp;
-// Time when the box is displayed
-let displayTimestamp;
-// User's reaction time in seconds
-let userReactionTime;
-
-/*--- Function to Create and Display a Box with Random Position and Color --- */
-
-/**
- * Displays a box with a random position, shape, and color on the screen after a random delay.
- */
-function createRandomBox() {
-    // Time delay in milliseconds before displaying the box
-    const delay = Math.random() * 1000;
-
-    setTimeout(() => {
-        // Determine box shape: circle or square
-        document.getElementById("box").style.borderRadius = Math.random() > 0.5 ? "100px" : "0";
-
-        // Set random positions for the box
-        const topPosition = Math.random() * 125;
-        const leftPosition = Math.random() * 125;
-
-        // Apply the position and random color to the box
-        document.getElementById("box").style.top = topPosition + "px";
-        document.getElementById("box").style.left = leftPosition + "px";
-        document.getElementById("box").style.backgroundColor = generateRandomColor();
-        document.getElementById("box").style.display = "block";
-
-        // Record the time when the box is shown
-        displayTimestamp = Date.now();
-    }, delay);
-}
-
-/*--- Event Listener for Box Clicks to Measure Reaction Time --- */
-
-/**
- * Handles the click event on the box element.
- * Calculates the reaction time and displays it, then hides the box and creates a new one.
- */
-document.getElementById("box").addEventListener("click", function () {
-    // Record the click time
-    clickTimestamp = Date.now();
-
-    // Compute the reaction time in seconds
-    userReactionTime = (clickTimestamp - displayTimestamp) / 1000;
-
-    // Display the reaction time to the user
-    document.getElementById("printReactionTime").textContent = `You can do better!: ${userReactionTime} seconds`;
-
-    // Hide the box
-    this.style.display = "none";
-
-    // Create a new box
-    createRandomBox();
+startButton.addEventListener('click', function () {
+    startButton.style.display = 'none'; 
+    startGame();
 });
 
-// Display the initial box
-createRandomBox();
+function startGame() {
+    const minTime = 1000; 
+    const maxTime = 5000; 
+    const randomTime = Math.floor(Math.random() * (maxTime - minTime)) + minTime; 
 
-/*---- Hidden Timer Rules (Not implemented) -----*/
+    timer = setTimeout(() => {
+        showDot();
+    }, randomTime);
+}
+
+function showDot() {
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
+
+    const randomX = Math.floor(Math.random() * (screenWidth - 30)); 
+    const randomY = Math.floor(Math.random() * (screenHeight - 30));
+
+    dot.style.left = `${randomX}px`;
+    dot.style.top = `${randomY}px`;
+    dot.style.display = 'block'; 
+
+    dot.addEventListener('click', function () {
+        dot.style.display = 'none'; 
+        alert("You clicked the dot!"); 
+        resetGame();
+    });
+}
+
+function resetGame() {
+    clearTimeout(timer);
+    startButton.style.display = 'block'; 
+}
