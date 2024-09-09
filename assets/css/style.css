@@ -1,6 +1,3 @@
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap');
-
 /* Global styles */
 body {
     display: flex;
@@ -33,66 +30,30 @@ h1 {
     color: white;
     border: none;
     cursor: pointer;
-    font-size: 4vw; 
+    font-size: 4vw; /* Use viewport width for flexible sizing */
 }
 
+/* Dot styling for desktop */
 #dot {
-    width: 8vw; 
-    height: 8vw;
+    width: 4vw; /* Smaller size using viewport width for desktops */
+    height: 4vw;
     background-color: red;
     border-radius: 50%;
     position: absolute;
     display: none;
 }
 
-#instructions, #leaderboard {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #f1f1f1;
-    border-radius: 8px;
-    width: 90%; 
-    max-width: 400px;
-}
-
-#leaderboard ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Media queries for smaller screens */
+/* Media query for smaller devices (phones) */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 6vw; 
-    }
-
-    #startButton {
-        padding: 15px;
-        font-size: 6vw; 
-    }
-
     #dot {
-        width: 12vw; 
-        height: 12vw;
+        width: 6vw; /* Slightly larger dot for mobile screens */
+        height: 6vw;
     }
 }
 
 @media (max-width: 480px) {
-    h1 {
-        font-size: 8vw; 
-    }
-
-    #startButton {
-        padding: 10px;
-        font-size: 8vw; 
-    }
-
     #dot {
-        width: 16vw; 
-        height: 16vw;
-    }
-
-    #instructions, #leaderboard {
-        width: 95%; 
+        width: 8vw; /* Slightly larger on smaller phones */
+        height: 8vw;
     }
 }

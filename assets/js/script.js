@@ -43,7 +43,7 @@ function showDot() {
 
     // Generate random X and Y positions, ensuring the Y value is greater than the header height
     const randomX = Math.floor(Math.random() * (screenWidth - 30)); // Subtract 30 to account for dot size
-    const randomY = Math.floor(Math.random() * (screenHeight - headerHeight - 60)) + headerHeight; // Ensure dot appears below the header
+    const randomY = Math.floor(Math.random() * (screenHeight - headerHeight - 30)) + headerHeight; // Ensure dot appears below the header
 
     dot.style.left = `${randomX}px`;
     dot.style.top = `${randomY}px`;
