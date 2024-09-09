@@ -95,9 +95,9 @@ function registerReaction() {
     Function to save the reaction times in session storage 
 */
 function saveReactionTimes() {
-    // Ensure only the last 3 reaction times are saved
-    if (reactionTimes.length > 3) {
-        reactionTimes = reactionTimes.slice(-3); // Keep only the last 3 entries
+    // Ensure only the last 4 reaction times are saved
+    if (reactionTimes.length > 4) {
+        reactionTimes = reactionTimes.slice(-4); // Keep only the last 4 entries
     }
 
     // Save the array of reaction times as a JSON string in session storage
@@ -115,11 +115,11 @@ function displayLeaderboard() {
         reactionTimes = JSON.parse(savedTimes); // Parse the saved times (stored as JSON)
     }
 
-    // Display only the last 3 reaction times
-    const lastThreeTimes = reactionTimes.slice(-3); // Get the last 3 reaction times
+    // Display only the last 4 reaction times
+    const lastFourTimes = reactionTimes.slice(-4); // Get the last 4 reaction times
 
     // Loop through the reaction times and add them to the leaderboard
-    lastThreeTimes.forEach((time, index) => {
+    lastFourTimes.forEach((time, index) => {
         const listItem = document.createElement('li'); // Create a new list item
         listItem.textContent = `#${index + 1}: ${time} ms`; // Set the text of the list item
         reactionTimesList.appendChild(listItem); // Add the list item to the leaderboard
