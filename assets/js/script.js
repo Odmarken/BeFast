@@ -3,6 +3,7 @@ const dot = document.getElementById('dot');
 const instructions = document.getElementById('instructions');
 const leaderboard = document.getElementById('leaderboard');
 const reactionTimesList = document.getElementById('reactionTimes');
+const header = document.querySelector('header');
 
 let timer;
 let reactionStart;
@@ -37,8 +38,12 @@ function showDot() {
     const screenWidth = window.innerWidth;
     const screenHeight = window.innerHeight;
 
+    // Calculate the height of the header to ensure the dot doesn't appear there
+    const headerHeight = header.offsetHeight;
+
+    // Generate random X and Y positions, ensuring the Y value is greater than the header height
     const randomX = Math.floor(Math.random() * (screenWidth - 30)); // Subtract 30 to account for dot size
-    const randomY = Math.floor(Math.random() * (screenHeight - 30));
+    const randomY = Math.floor(Math.random() * (screenHeight - headerHeight - 60)) + headerHeight; // Ensure dot appears below the header
 
     dot.style.left = `${randomX}px`;
     dot.style.top = `${randomY}px`;
@@ -59,6 +64,10 @@ function registerReaction() {
 }
 
 function saveReactionTimes() {
+    // Ensure reactionTimes is limited to 3 entries
+    if (reactionTimes.length > 3) {
+        reactionTimes = reactionTimes.slice(-3); // Keep only the last 3 entries
+    }
     sessionStorage.setItem('reactionTimes', JSON.stringify(reactionTimes)); // Save reaction times in session storage
 }
 
@@ -70,7 +79,10 @@ function displayLeaderboard() {
         reactionTimes = JSON.parse(savedTimes); // Parse saved reaction times
     }
 
-    reactionTimes.forEach((time, index) => {
+    // Ensure only the last 3 reaction times are displayed
+    const lastThreeTimes = reactionTimes.slice(-3); // Get the last 3 items
+
+    lastThreeTimes.forEach((time, index) => {
         const listItem = document.createElement('li');
         listItem.textContent = `#${index + 1}: ${time} ms`;
         reactionTimesList.appendChild(listItem);
