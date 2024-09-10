@@ -107,6 +107,6 @@ I've deployed the website on GitHub Pages.
 - Slack group community-sweden in CI slack group.
 - Brian my mentor.
 - Coding help https://www.youtube.com/@webbskolan in swedish
-- Project insperation https://codepen.io/rhaas/pen/LYxMmKb
+- Project inspiration https://codepen.io/rhaas/pen/LYxMmKb
 
 
