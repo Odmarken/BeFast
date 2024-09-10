@@ -1,4 +1,4 @@
-/* Global styles */
+/* Global Styles */
 body {
     background: url("../images/pp2background.png");
     display: flex;
@@ -11,6 +11,7 @@ body {
     justify-content: center;
 }
 
+/* Header Styling */
 header {
     position: absolute;
     top: 0;
@@ -19,12 +20,14 @@ header {
     padding: 10px 0;
 }
 
+/* Heading Styling */
 h1 {
     margin: 0;
     font-size: 36px;
     color: #000000;
 }
 
+/* Start Button Styling */
 #startButton {
     padding: 20px;
     background-color: #ff0000; 
@@ -36,13 +39,13 @@ h1 {
     transition: background-color 0.3s, transform 0.3s; 
 }
 
-
+/* Start Button Hover Styling */
 #startButton:hover {
     background-color: #ff0000; 
     transform: scale(1.05); 
 }
 
-
+/* Instructions Box Styling */
 #instructions {
     background-color: #000000; 
     color: #fcfffc; 
@@ -54,7 +57,7 @@ h1 {
     margin: 20px auto; 
 }
 
-/* Dot styling for desktop */
+/* Dot Styling */
 #dot {
     width: 3vw; 
     height: 3vw;
@@ -64,7 +67,7 @@ h1 {
     display: none;
 }
 
-/* Media query for smaller devices (phones) */
+/* Media Query for Tablets */
 @media (max-width: 768px) {
     #dot {
         width: 6vw; /* Slightly larger dot for mobile screens */
@@ -72,6 +75,7 @@ h1 {
     }
 }
 
+/* Media Query for Phones */
 @media (max-width: 480px) {
     #dot {
         width: 8vw; /* Slightly larger on smaller phones */
