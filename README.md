@@ -7,6 +7,19 @@
 ## Overview
 Welcome to Be Fast! This engaging and fast-paced game is meticulously designed to test and improve your reaction speeds in a fun and challenging way. As you play, uniformly sized dots will randomly appear on different parts of the screen. Your task is simple yet challenging: click on these dots as quickly as possible before they disappear. Each dot can appear at any moment, with intervals varying randomly between 0 to 5000 milliseconds. This setup continuously challenges your reflexes without the complexity of levels or scoring. Dive into Be Fast and challenge yourself to maintain precision and speed over a prolonged period. Perfect for players of all ages seeking to sharpen their sensory skills and reaction times in an exciting, interactive format.
 
+## Table of Contents
+- [Features](#features)
+- [How to Play](#how-to-play)
+- [User Stories](#user-stories)
+- [Design and Typography](#design-and-typography)
+- [Technologies Used](#technologies-used)
+- [Browser Compatibility](#browser-compatibility)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Future Enhancements](#future-enhancements)
+- [Coding Help](#coding-help)
+- [Credits](#credits)
+
 ## Features
 - A **Start Button** to begin each round.
 - A random delay before the dot appears to enhance unpredictability.
@@ -32,8 +45,8 @@ Welcome to Be Fast! This engaging and fast-paced game is meticulously designed t
 ## Design and Typography
 - **Font**: We used the 'Pridi' font from Google Fonts for a clean and modern look.
 - **Color Scheme**:
-  - Primary Button: Green (`#ff0000`), changes to a darker green on hover (`#ff0000`).
-  - Background: Black (`#000000`) with white text for instructions.
+  - Primary Button: Red (`#FF0000`), changes to same red on hover (`#FF0000`).
+  - Background: white (`#000000`) with white text for instructions.
   - Dot: Red (`#FF0000`) to draw attention and enhance visibility.
 - **Layout**: 
   - The game uses a **flexbox layout** to center elements and ensure responsiveness across different devices.
@@ -63,7 +76,6 @@ Welcome to Be Fast! This engaging and fast-paced game is meticulously designed t
 
 ![Lighthouse](./assets/images/seo.png)
 
-
 ## Browser Compatibility
 This game is tested and works on the following browsers:
 - **Google Chrome**: Latest version
@@ -85,7 +97,6 @@ I've deployed the website on GitHub Pages.
 2. From the source section drop-down menu, select the Master Branch once the master branch has been selected, the page will be automatically refreshed with a detailed display to indicate the successful deployment
 3. Changes pushed to the master branch will take effect on the live project
 
-
 [Be Fast](https://odmarken.github.io/BeFast/) 
 
 ## Future Enhancements
@@ -94,7 +105,7 @@ I've deployed the website on GitHub Pages.
 - **Sound Effects**: Add sound when the dot appears or when clicked to enhance user experience.
 - **Difficulty Levels**: Introduce options for different time intervals and dot sizes for an added challenge.
 
-## Coding help
+## Coding Help
 
 - I received a lot of help from the lovely community at CI Community-Sweden. The Slack group has been amazing when it comes to assistance. Every time I have been stuck, they have responded within minutes. We also have multiple huddles that helps a lot from experienced coders.
 
@@ -108,5 +119,3 @@ I've deployed the website on GitHub Pages.
 - Brian my mentor.
 - Coding help https://www.youtube.com/@webbskolan in swedish
 - Project inspiration https://codepen.io/rhaas/pen/LYxMmKb
-
-
