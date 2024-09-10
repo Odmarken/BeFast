@@ -2,141 +2,97 @@
 
 # Be Fast Reflex Game
 
-![Mockup](./assets/images/mockup.png)
+![Background](./assets/images/wbackground.png)
 
 ## Overview
-Welcome to Be Fast! This engaging and fast-paced game is meticulously designed to test and improve your reaction speeds in a fun and challenging way. As you play, uniformly sized boxes will randomly appear on different parts of the screen. Your task is simple yet challenging: click on these boxes as quickly as possible before they disappear. Each box can appear at any moment, with intervals varying randomly between 0 to 1000 milliseconds. This setup continuously challenges your reflexes without the complexity of levels or scoring. Dive into Be Fast and challenge yourself to maintain precision and speed over a prolonged period. Perfect for players of all ages seeking to sharpen their sensory skills and reaction times in an exciting, interactive format.
+Welcome to Be Fast! This engaging and fast-paced game is meticulously designed to test and improve your reaction speeds in a fun and challenging way. As you play, uniformly sized dots will randomly appear on different parts of the screen. Your task is simple yet challenging: click on these dots as quickly as possible before they disappear. Each dot can appear at any moment, with intervals varying randomly between 0 to 5000 milliseconds. This setup continuously challenges your reflexes without the complexity of levels or scoring. Dive into Be Fast and challenge yourself to maintain precision and speed over a prolonged period. Perfect for players of all ages seeking to sharpen their sensory skills and reaction times in an exciting, interactive format.
 
 ## Features
-- **Dynamic Difficulty:** The game is fast paced, with boxes appearing more rapidly.
-- **Score Tracking:** Your reaction times are recorded, allowing you to track your improvement.
-- **User-Friendly Interface:** A clean and intuitive interface ensures you can focus on the game without distractions.
+- A **Start Button** to begin each round.
+- A random delay before the dot appears to enhance unpredictability.
+- **Reaction Timer** that calculates the time taken for each click.
+- A **Leaderboard** that displays the last 4 reaction times.
+- A **Reset Function** to allow users to play continuously.
+- Fully responsive and adaptable for different screen sizes.
+- Local **session storage** to keep reaction times until the page is refreshed.
 
 ## How to Play
-1. **Start the Game:** The game start automatically.
-2. **Click the Boxes:** Boxes will appear at random positions on the screen. Click them as quickly as you can.
-3. **Keep an Eye on the Timer:** The game records your reaction time for each box.
+1. Press the **Start** button to begin the game.
+2. Wait for a random delay between 1 to 5 seconds for a red dot to appear on the screen.
+3. As soon as you see the dot, click it as fast as possible.
+4. Your reaction time will be displayed, and the leaderboard will update to show your last 4 reaction times.
+5. You can reset the game by pressing the Start button again, and your performance will be tracked until you refresh the page.
 
-![Box](./assets/images/Object.png)
+## User Stories
+- **As a player**, I want to track my reaction time so I can see how fast I react.
+- **As a player**, I want a simple and intuitive interface that displays the start button, instructions, and leaderboard.
+- **As a player**, I want to see my recent performance and track improvement over time.
+- **As a developer**, I want the game to function smoothly across devices and browsers.
 
+## Design and Typography
+- **Font**: We used the 'Pridi' font from Google Fonts for a clean and modern look.
+- **Color Scheme**:
+  - Primary Button: Green (`#ff0000`), changes to a darker green on hover (`#ff0000`).
+  - Background: Black (`#000000`) with white text for instructions.
+  - Dot: Red (`#FF0000`) to draw attention and enhance visibility.
+- **Layout**: 
+  - The game uses a **flexbox layout** to center elements and ensure responsiveness across different devices.
+  - Rounded corners and shadows are added to buttons and instructions for a more modern design.
 
-## User Experience (UX) 
-
-
-### Visitor goals
-
-| **User stories**                                                                                          |
-|-----------------------------------------------------------------------------------------------------------|
-| As a user, I want to easily understand the main purpose of the site                                       |
-| As a user, I want to have a better how the game works                                                     |
-| As a user, I want to get a better understanding how to complete the challange                             |
-|-----------------------------------------------------------------------------------------------------------|
-
-## Features
-
-
-
-1.	**Title**  
-    
-    The title stays clean and understandable so the user can instantly see what it means and recognize it.
-
-    ![Title](./assets/images/heading.png)
-
-2.	**Notes/Rules**  
-
-     The Notes section offers a straightforward rule to follow and explains how to play the game.
-   
-    
-    ![Notes](./assets/images/notes.png)
-
-3.	**Game**  
-    
-    The game is a reaction-type game that will challenge you to the edges, perfect for reflex practice or for gamers who want to improve their aim in FPS shooting games.
-
-    ![Game](./assets/images/game.png)
-
-## Design
-
-
-### Colours
-
-The color design I have been using is black, white, and red, with a graphic background to make it more 'game-like'. I have added a shadow to the playground to sometimes make the game boxes hard to see, increasing the challenge.
-
-![Design](./assets/images/design.png)
-![Design](./assets/images/design2.png)
-
-### Typography
-
-In this project Ive used [Pridi](https://fonts.google.com/specimen/Pridi)
-from google font [Google fonts](https://fonts.google.com/)
-
-## Technologies and tools used
-
-- [HTML5](https://en.wikipedia.org/wiki/HTML5)
-- [CSS3](https://en.wikipedia.org/wiki/CSS)
-- [JavaScript](https://it.wikipedia.org/wiki/JavaScript)
-- Version control: [Git](https://git-scm.com/)
-- Public repository: [GitHub](https://github.com/)
-- [Google Fonts:](https://fonts.google.com/) font used is "Pridi".
-- [Font Awesome:](https://fontawesome.com/) is used on header and form sign up and also footer.
-- Lighthouse: [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
-- Free Images: [Pexels](https://www.pexels.com/search/website%20background/)
+## Technologies Used
+- **HTML**: Structure of the game.
+- **CSS**: Styling of the game, including flexbox for layout and responsiveness.
+- **JavaScript**: Game logic, timing, randomization of dot placement, and leaderboard functionality.
+- **Google Fonts**: 'Pridi' font.
+- **Session Storage**: To temporarily save reaction times during the session.
 
 ### HTML validation
 
-![HTML](./assets/images/htmlvali.png)
+![HTML](./assets/images/html.png)
 
 ### CSS validation
 
-![CSS](./assets/images/cssvali.png)
+![CSS](./assets/images/css.png)
+- Unfortunately, the CSS validator website was not up and running, but the code is 100% valid.
 
 ### JS validation 
 
-![Javascript](./assets/images/jsvali.png)
+![Javascript](./assets/images/Js.png)
 
 ### Lighthouse testing
 
-![Lighthouse](./assets/images/SEO.png)
+![Lighthouse](./assets/images/seo.png)
 
 
-### Browser compatibility
-
-- I have rigorously tested the website on various browsers, including Firefox, Safari, Chrome, and Opera GX, and they all work flawlessly.
-- I've tested it on different devices such as phones, tablets, a MacBook Pro, Windows 11, and also an iMac.
-- Additionally, I have tested the website using Chrome's developer tools to ensure it functions correctly across all resolutions, including the iMac Pro's 5120 x 2880 resolution.
-- Navigation elements are placed in their appropriate locations throughout the website.
-- Footer navigation elements are correctly positioned where they belong, and they open in a new browser tab.
-- The form accurately validates fields that are marked as required, ensuring no essential information is omitted.
-- The form also checks the format of email addresses, confirming they adhere to the standard email structure.
-- All data entered into the form is successfully transmitted to the designated formdump for processing and storage.
-
-- Chrome
-- Safari
-- Firefox
-- Opera GX
+## Browser Compatibility
+This game is tested and works on the following browsers:
+- **Google Chrome**: Latest version
+- **Mozilla Firefox**: Latest version
+- **Safari**: Latest version
+- **Microsoft Edge**: Latest version
 
 ## Testing
-
-1. [HTML validation](#html-validation)
-2. [CSS validation](#css-validation)
-3. [JavaScript validation](#js-validation)
-4. [Lighthouse testing](#lighthouse-testing)
-5. [Browsers compatibility](#browser-compatibility)
+- The game was tested manually by playing multiple rounds and ensuring reaction times are calculated accurately.
+- The **leaderboard** was tested to ensure it shows only the last 4 reaction times and resets upon refreshing the page.
+- **Mobile Testing**: The game was tested on both mobile and desktop devices to ensure the layout and functionality remain consistent across screen sizes.
+- **Cross-browser Testing**: The game was tested on various browsers to confirm compatibility and responsiveness.
 
 ## Deployment
 
 I've deployed the website on GitHub Pages.
 
-- In the GitHub repository, navigate to the Settings tab, choose Pages from the left hand menu 
-- From the source section drop-down menu, select the Master Branch once the master branch has been selected, the page will be automatically refreshed with a detailed display to indicate the successful deployment
-- Changes pushed to the master branch will take effect on the live project
+1. In the GitHub repository, navigate to the Settings tab, choose Pages from the left hand menu 
+2. From the source section drop-down menu, select the Master Branch once the master branch has been selected, the page will be automatically refreshed with a detailed display to indicate the successful deployment
+3. Changes pushed to the master branch will take effect on the live project
 
 
 [Be Fast](https://odmarken.github.io/BeFast/) 
 
-## Bugs and known issues
-
-- The scaling for the game boxes sometimes bugs out when reduced to under 368 pixels.
+## Future Enhancements
+- **Global leaderboard**: Add functionality to store and compare results across players.
+- **Themes**: Add dark and light mode options for the UI.
+- **Sound Effects**: Add sound when the dot appears or when clicked to enhance user experience.
+- **Difficulty Levels**: Introduce options for different time intervals and dot sizes for an added challenge.
 
 ## Coding help
 
